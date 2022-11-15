@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <!--*Custom CSS-->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Pokedex</h1>
+    <div class="pokeContainer">
+        <img src="./assets/pokeball.png" alt="" id="pokeImg">
+        <div class="infoContainer">
+            <div class="itemInfo">
+                <p class="titleItem">Number Pdx:</p>
+                <p id="sectionNumber"></p>
+            </div>
+            <div class="itemInfo">
+                <p class="titleItem">Name:</p>
+                <p id="sectionName"></p>
+            </div>
+            <div class="itemInfo">
+                <p class="titleItem">Type:</p>
+                <p id="sectionType"></p>
+            </div>
+            <div class="itemInfo" >
+                <p class="titleItem">Abilities:</p>
+                <div id="abilities">
+                    <p id="sectionAbilities"></p>
+                </div>
+                
+            </div>              
+            
+        </div>
+    </div>
+    
+    <div class="container">  
+        <div>
+            <input type=" text" placeholder="Type name or number" id="pokeName">
+        </div>
+        <div>
+            <button onclick="fetchPokemon()">Change Pokemon</button>
+        </div>
+        
+    </div>
+    
+    
+</body>
+<script src="./main.js"></script>
+</html>

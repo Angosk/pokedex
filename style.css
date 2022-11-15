@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+* {
+    font-family: 'Black Ops One', cursive;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #E84A44;
+    border-radius: 10%;
+    border: 6px solid #A53231;
+    box-shadow: 0px 0px 6px 3px #017BC7;
+}
+
+h1 {
+    background: url(./assets/pokedex2.jpg) center no-repeat;
+    width: 90vw;
+    height: 10vh;
+    border-radius: 70px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+#pokeImg{
+    width: 45vw;
+    background: whitesmoke;
+    border-radius: 10%;
+    border: 6px solid #A53231;
+    box-shadow:inset 0px 0px  30px 10px #7CD5F9;
+}
+
+.pokeContainer {
+    display: flex;
+    flex-direction: row;
+    color: whitesmoke;
+    font-size: xx-large;
+    border-radius: 20px;
+    background: transparent;
+    align-items: center;
+    
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.itemInfo {
+    display: flex;
+    padding: 10px;
+    font-size: x-large;
+    align-items: baseline;
+}
+
+#abilities {
+    display: flex;
+    flex-direction: column;
+}
+
+.titleItem {
+    margin-right: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    align-items: center;
+}
+
+.container input {
+    margin-right: 10px;
+    text-align: center;
+    color: whitesmoke;
+    font-size: xx-large;
+    border-radius: 20px;
+    background: transparent;
+    width: 45vw;
+}
+
+.container button {
+    text-align: center;
+    color: black;
+    padding: 6px;
+    font-size: x-large;
+    border-radius: 20px;
+    box-shadow: 3px 3px 2px #017BC7;
+}
+.container button:hover {
+    background: black;
+    color: whitesmoke;
+    box-shadow: 3px 3px 2px whitesmoke;
+}
+
+@media (max-width: 600px){
+    .pokeContainer{
+        flex-direction: column;
+    }
+    .container {
+        flex-direction: column;
+    }
+}
